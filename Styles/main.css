@@ -22,8 +22,8 @@
     margin: 0px;
 }
 body{
-    font-family: 'Noto Sans', sans-serif;;
-    background-image: url('Img/pokemon_grass.jpg');
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url('../Img/pokemon_grass.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
