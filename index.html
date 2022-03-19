@@ -10,10 +10,28 @@
     <title>Pokédex | Home</title>
 </head>
 <body>
-    <h1>Pokédex LaunchX</h1>
-    <input type="text" id="poke-name" placeholder="Charmeleon" name="pokeName">
-    <img src="./Img/Honorball.png" id="poke-sprite" width="200px">
-    <button onclick="consult()">Cambiar Pokemon</button>
+    <div class="container title">
+        <a href="./index.html">Pokédex LaunchX</a>
+        <p>Ingresa el nombre o el numero de id del pokémon,  del cual deseas obtener sus datos.</p>
+    </div>
+    <!-- Cuadro de busqueda para los Pokémon's -->
+    <div class="container poke-search">
+        <label for="poke-name">Nombre/id del pokémon</label>
+        <input type="text" id="poke-name" placeholder="Charmeleon" name="pokeName">
+        <button onclick="consult()">Buscar</button>
+    </div>
+    <!-- Cuadro de despliegue de la información del pokémon -->
+    <div class="container poke-info">
+        <div class="screen">
+            <img class="sprite" src="./Img/Honorball.png" id="poke-sprite" width="250px">
+        </div>
+        <div class="data">
+                <div id="id">ID: None</div>
+                <div id="nombre">Nombre: None</div>
+                <div id="types">Tipo(s): None</div>
+                <div id="altura">Altura: None</div>
+        </div>
+    </div>
     <footer>
         <!-- Scripts -->
         <script src="./Scripts/scripts.js"></script>

@@ -13,12 +13,36 @@ const consult = ()=> {
             return answer.json();
         }
     }).then((data) => {  // con el segundo then se obtiene la información de la respuesta en formato Json.
-        console.log(data);
+        // console.log(data);
         let img_pokemon = data.sprites.front_default;
         img_switcher(img_pokemon)
+        load_data(data)
     })
 }
 const img_switcher = (url) => {
     const sprite = document.getElementById("poke-sprite")
     sprite.src = url;
+}
+// Inserción de los datos del pokemon.
+const load_data = (data) => {
+    let name_pokemon  = data.name
+    let type_pkm = data.types
+    let id_pkm = data.id
+    const name = document.getElementById('nombre')
+    const id = document.getElementById('id')
+    const type = document.getElementById("types")
+    name.textContent = `Nombre: ${name_pokemon.charAt(0).toUpperCase() + name_pokemon.slice(1)}`;
+    id.textContent = `ID: ${id_pkm}`;
+    // Carga de los tipos de pokemon
+    let tipos = []
+    for (const property in type_pkm){
+        // console.log(property)
+        let val_property = type_pkm[property];
+        // console.log(val_property)
+        for (const value in val_property){
+            var tipo = val_property[value]
+        }
+        tipos.push(tipo.name)
+        type.textContent= 'Tipo(s): '+ tipos;
+    }
 }
