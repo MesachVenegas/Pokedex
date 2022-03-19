@@ -23,7 +23,7 @@
 }
 body{
     font-family: 'Noto Sans', sans-serif;;
-    background-image: url('/Img/pokemon_grass.jpg');
+    background-image: url('./Img/pokemon_grass.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
