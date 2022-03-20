@@ -25,21 +25,20 @@ const img_switcher = (url) => {
 }
 // Inserción de los datos del pokemon.
 const load_data = (data) => {
-    let name_pokemon  = data.name
-    let type_pkm = data.types 
-    let id_pkm = data.id
-    let altura = data.height
-    const name = document.getElementById('nombre')
-    const id = document.getElementById('id')
-    const type = document.getElementById("types")
-    const altu = document.getElementById("altura")
+    let name_pokemon  = data.name;
+    let type_pkm = data.types ;
+    let id_pkm = data.id;
+    let altura = data.height;
+    const name = document.getElementById('nombre');
+    const id = document.getElementById('id');
+    const type = document.getElementById("types");
+    const altu = document.getElementById("altura");
     name.textContent = `Nombre: ${name_pokemon.charAt(0).toUpperCase() + name_pokemon.slice(1)}`;
     id.textContent = `ID: ${id_pkm}`;
     altu.textContent = `ID: ${altura}`;
     
-
     // Carga de los tipos de pokemon
-    let tipos = []
+    let tipos = [];
     for (const property in type_pkm){
         // console.log(property)
         let val_property = type_pkm[property];
