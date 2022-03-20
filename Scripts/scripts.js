@@ -35,7 +35,7 @@ const load_data = (data) => {
     const alt = document.getElementById("altura")
     name.textContent = `Nombre: ${name_pokemon.charAt(0).toUpperCase() + name_pokemon.slice(1)}`;
     id.textContent = `ID: ${id_pkm}`;
-    altura.textContent = `Altura: ${altura}`
+    alt.textContent = `Altura: ${altura}`,
 
     // Carga de los tipos de pokemon
     let tipos = []
