@@ -13,7 +13,7 @@ const consult = ()=> {
             return answer.json();
         }
     }).then((data) => {  // con el segundo then se obtiene la información de la respuesta en formato Json.
-        // console.log(data);
+        console.log(data);
         let img_pokemon = data.sprites.front_default;
         img_switcher(img_pokemon)
         load_data(data)
