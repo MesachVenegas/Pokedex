@@ -1,10 +1,3 @@
-var icon_tipos = {
-    'fire': '/Img/Tipos/fuego.png',
-    'water': '/Img/Tipos/agua.png'
-}
-
-
-
 const consult = ()=> {
     // getElementById nos devuelve un elemento dentro del DOM.
     const pokeInput = document.getElementById("poke-name");
