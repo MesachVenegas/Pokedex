@@ -7,7 +7,7 @@ const consult = ()=> {
         // then nos permite manejar las respuesta que sera una funcion.
     fetch(url).then((answer)=> {
         if (answer.status != "200"){
-            img_switcher("https://64.media.tumblr.com/0c24dd41318464f5b6780e3bfb541e70/tumblr_mjm0bk3Nf21rjnki9o1_500.gif")
+            img_switcher("/Img/sad_pokemon.png")
         }
         else{
             return answer.json();
@@ -22,6 +22,7 @@ const consult = ()=> {
 const img_switcher = (url) => {
     const sprite = document.getElementById("poke-sprite")
     sprite.src = url;
+    sprite.width = 250;
 }
 // Inserción de los datos del pokemon.
 const load_data = (data) => {
@@ -32,11 +33,11 @@ const load_data = (data) => {
     const name = document.getElementById('nombre');
     const id = document.getElementById('id');
     const type = document.getElementById("types");
-    const altu = document.getElementById("altura");
-    name.textContent = `Nombre: ${name_pokemon.charAt(0).toUpperCase() + name_pokemon.slice(1)}`;
-    id.textContent = `ID: ${id_pkm}`;
-    altu.textContent = `Altura: ${altura}`;
-    
+    const alt = document.getElementById("altura");
+    name.textContent = `${name_pokemon.charAt(0).toUpperCase() + name_pokemon.slice(1)}`;
+    id.textContent = `${id_pkm}`;
+    alt.textContent = `${altura}`;
+
     // Carga de los tipos de pokemon
     let tipos = [];
     for (const property in type_pkm){
@@ -47,6 +48,6 @@ const load_data = (data) => {
             var tipo = val_property[value]
         }
         tipos.push(tipo.name)
-        type.textContent= 'Tipo(s): '+ tipos;
+        type.textContent= tipos;
     }
 }

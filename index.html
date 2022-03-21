@@ -21,15 +21,31 @@
         <button onclick="consult()">Buscar</button>
     </div>
     <!-- Cuadro de despliegue de la información del pokémon -->
+    <div class="screen">
+        <img class="bg-pokemon" src="./Img/bg-pokemon.png">
+        <img class="sprite" src="./Img/Honorball.png" id="poke-sprite" width="150px">
+    </div>
     <div class="container poke-info">
-        <div class="screen">
-            <img class="sprite" src="./Img/Honorball.png" id="poke-sprite" width="250px">
-        </div>
         <div class="data">
-                <div id="id">ID: None</div>
-                <div id="nombre">Nombre: None</div>
-                <div id="types">Tipo(s): None</div>
-                <div id="altura">Altura: None</div>
+            <h1 id="nombre">Nombre</h1>
+            <div id="num-id">
+                <span>
+                    <img src="./Img/estrella.png" height="30px">ID
+                </span>
+                <p id="id">None</p>
+            </div>
+            <div id="tipos">
+                <span>
+                    <img src="./Img/tipos.png" height="30px">Tipos
+                </span>
+                <p id="types">None</p>
+            </div>
+            <div id="pok-height">
+                <span>
+                    <img src="./Img/rule.png" height="30px">Altura
+                </span>
+                <p id="altura">None</p>
+            </div>
         </div>
     </div>
     <footer>
