@@ -1,3 +1,10 @@
+var icon_tipos = {
+    'fire': '/Img/Tipos/fuego.png',
+    'water': '/Img/Tipos/agua.png'
+}
+
+
+
 const consult = ()=> {
     // getElementById nos devuelve un elemento dentro del DOM.
     const pokeInput = document.getElementById("poke-name");
@@ -48,6 +55,12 @@ const load_data = (data) => {
             var tipo = val_property[value]
         }
         tipos.push(tipo.name)
-        type.textContent= tipos;
+        // Representacion de info de estados del pokemon según sus tipos.
+        if(tipos.length > 1){
+            type.textContent= `${tipos[0].charAt(0).toUpperCase() + tipos[0].slice(1)} / ${tipos[1].charAt(0).toUpperCase() + tipos[1].slice(1)}`
+        }
+        else{
+            type.textContent= tipos;
+        }
     }
 }
