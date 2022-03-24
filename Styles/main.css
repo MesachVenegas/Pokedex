@@ -17,6 +17,8 @@
     --lemon-yellow: #F7F052;
     --pokeball-red: rgb(221, 45, 39);
     --pokedex-bg: rgb(238, 65, 59);
+    --transition: color 0.1s, background-color 0.2s ease-in-out;
+    --base-skill-length: 0%;
 }
 *{
     padding: 0px;
@@ -137,4 +139,98 @@ body{
 }
 #pok-height{
     grid-row: 3/4;
+}
+#habilidades{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+/* Barras de estadísticas */
+.skill{
+    grid-column: 2/3;
+    grid-row: 4/8;
+}
+.skill-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.base-skill,
+.base-skill::after{
+    position: relative;
+    width: 250px;
+    height: 8px;
+    background-color: #8888;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.base-skill::after{
+    content: '';
+    position: absolute;
+    left: -250px;
+    background-color: var(--blue-border);
+    transition: .7s all;
+    animation: skill_base_fill 2s ease-in-out forwards;
+}
+.skill-fill-100::after {
+    --base-skill-length: 100%;
+}
+.skill-fill-95::after {
+    --base-skill-length: 95%;
+}
+.skill-fill-90::after {
+    --base-skill-length: 90%;
+}
+.skill-fill-85::after {
+    --base-skill-length: 85%;
+}
+.skill-fill-80::after {
+    --base-skill-length: 80%;
+}
+.skill-fill-75::after {
+    --base-skill-length: 75%;
+}
+.skill-fill-70::after {
+    --base-skill-length: 70%;
+}
+.skill-fill-65::after {
+    --base-skill-length: 65%;
+}
+.skill-fill-60::after {
+    --base-skill-length: 60%;
+}
+.skill-fill-55::after {
+    --base-skill-length: 55%;
+}
+.skill-fill-50::after {
+    --base-skill-length: 50%;
+}
+.skill-fill-45::after {
+    --base-skill-length: 45%;
+}
+.skill-fill-40::after {
+    --base-skill-length: 40%;
+}
+.skill-fill-35::after {
+    --base-skill-length: 35%;
+}
+.skill-fill-30::after {
+    --base-skill-length: 30%;
+}
+.skill-fill-25::after {
+    --base-skill-length: 25%;
+}
+.skill-fill-20::after {
+    --base-skill-length: 20%;
+}
+.skill-fill-15::after {
+    --base-skill-length: 15%;
+}
+.skill-fill-10::after {
+    --base-skill-length: 10%;
+}
+
+@keyframes skill_base_fill {
+    to{
+        transform: translate(var(--base-skill-length));
+    }
 }
