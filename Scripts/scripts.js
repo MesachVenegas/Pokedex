@@ -64,5 +64,17 @@ const load_data = (data) => {
 // Stats base del pokemon
 const bar_fill = (data) => {
     let stats = data.stats;
+    let hp = document.getElementById('hp-data')
+    let atk = document.getElementById('atk-data')
+    let df= document.getElementById('df-data')
+    let es_atk = document.getElementById('es_atk-data')
+    let es_df = document.getElementById('es_def-data')
+    let speed = document.getElementById('speed-data')
     console.log(stats)
+    hp.textContent = stats[0].base_stat
+    atk.textContent = stats[1].base_stat
+    df.textContent = stats[2].base_stat
+    es_atk.textContent = stats[3].base_stat
+    es_df.textContent = stats[4].base_stat
+    speed.textContent = stats[5].base_stat
 }
