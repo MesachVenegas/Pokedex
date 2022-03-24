@@ -146,7 +146,7 @@ body{
 }
 /* Barras de estadísticas */
 .skill{
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 4/8;
 }
 .skill-item{
@@ -167,7 +167,7 @@ body{
     content: '';
     position: absolute;
     left: -250px;
-    background-color: var(--blue-border);
+    background-color: var(--pokedex-bg);
     transition: .7s all;
     animation: skill_base_fill 2s ease-in-out forwards;
 }
