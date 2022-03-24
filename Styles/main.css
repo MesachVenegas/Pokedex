@@ -169,7 +169,7 @@ body{
     left: -250px;
     background-color: var(--pokedex-bg);
     transition: .7s all;
-    animation: skill_base_fill 2s ease-in-out forwards;
+    animation: skill_base_fill 7s ease-in-out forwards;
 }
 .skill-fill-100::after {
     --base-skill-length: 100%;
