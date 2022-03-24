@@ -13,7 +13,7 @@ const consult = ()=> {
             return answer.json();
         }
     }).then((data) => {  // con el segundo then se obtiene la información de la respuesta en formato Json.
-        console.log(data);
+        // console.log(data);
         let img_pokemon = data.sprites.front_default;
         img_switcher(img_pokemon)
         load_data(data)
@@ -39,7 +39,7 @@ const load_data = (data) => {
     name.textContent = `${name_pokemon.charAt(0).toUpperCase() + name_pokemon.slice(1)}`;
     id.textContent = `${id_pkm}`;
     alt.textContent = `${altura}`;
-    console.log(habilidades)
+    // console.log(habilidades)
 
     // Carga de los tipos de pokemon
     let tipos = [];
@@ -64,7 +64,7 @@ const load_data = (data) => {
 // Stats base del pokemon
 const bar_fill = (data) => {
     let stats = data.stats;
-    console.log(stats);
+    // console.log(stats);
     // Obtención de  los elementos para cambio de cantidad.
     let hp = document.getElementById('hp-data');
     let atk = document.getElementById('atk-data');
@@ -91,7 +91,14 @@ const bar_fill = (data) => {
     let bar_es_atk = document.getElementById('bar_es_atk');
     let bar_es_def = document.getElementById('bar_es_def');
     let bar_speed = document.getElementById('bar_speed');
-    bar_hp.classList.add(`skill-fill-${calcular_porcentaje(hp_value)}`)
+    if(bar_hp.classList[1] == true){
+        console.log(bar_hp.classList[1])
+        bar_hp.classList[1] = `skill-fill-${calcular_porcentaje(hp_value)}`;
+    }
+    else{
+        console.log(bar_hp.classList)
+        bar_hp.classList.add(`skill-fill-${calcular_porcentaje(hp_value)}`)
+    }
     bar_atk.classList.add(`skill-fill-${calcular_porcentaje(atk_value)}`)
     bar_def.classList.add(`skill-fill-${calcular_porcentaje(def_value)}`)
     bar_es_atk.classList.add(`skill-fill-${calcular_porcentaje(es_atk_value)}`)
@@ -100,6 +107,6 @@ const bar_fill = (data) => {
 
 }
 const calcular_porcentaje = (valor) => {
-    let result =  Math.round(valor * 100 / 200)
+    let result =  Math.round(valor * 100 / 180)
     return result
 }

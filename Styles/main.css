@@ -174,20 +174,92 @@ body{
 .skill-fill-100::after {
     --base-skill-length: 100%;
 }
+.skill-fill-99::after {
+    --base-skill-length: 99%;
+}
+.skill-fill-98::after {
+    --base-skill-length: 98%;
+}
+.skill-fill-97::after {
+    --base-skill-length: 97%;
+}
+.skill-fill-96::after {
+    --base-skill-length: 96%;
+}
 .skill-fill-95::after {
     --base-skill-length: 95%;
+}
+.skill-fill-94::after {
+    --base-skill-length: 94%;
+}
+.skill-fill-93::after {
+    --base-skill-length: 93%;
+}
+.skill-fill-92::after {
+    --base-skill-length: 92%;
+}
+.skill-fill-91::after {
+    --base-skill-length: 91%;
 }
 .skill-fill-90::after {
     --base-skill-length: 90%;
 }
+.skill-fill-89::after {
+    --base-skill-length: 89%;
+}
+.skill-fill-88.base-skill {
+    --base-skill-length: 88%;
+}
+.skill-fill-87::after {
+    --base-skill-length: 87%;
+}
+.skill-fill-86::after {
+    --base-skill-length: 86%;
+}
 .skill-fill-85::after {
     --base-skill-length: 85%;
+}
+.skill-fill-84::after {
+    --base-skill-length: 84%;
+}
+.skill-fill-83::after {
+    --base-skill-length: 83%;
+}
+.skill-fill-82::after {
+    --base-skill-length: 82%;
+}
+.skill-fill-81::after {
+    --base-skill-length: 81%;
 }
 .skill-fill-80::after {
     --base-skill-length: 80%;
 }
+.skill-fill-79::after {
+    --base-skill-length: 79%;
+}
+.skill-fill-78::after {
+    --base-skill-length: 78%;
+}
+.skill-fill-77::after {
+    --base-skill-length: 77%;
+}
+.skill-fill-76::after {
+    --base-skill-length: 76%;
+}
 .skill-fill-75::after {
     --base-skill-length: 75%;
+}
+.skill-fill-74::after {
+    --base-skill-length: 74%;
+}
+.skill-fill-73::after {
+    --base-skill-length: 73%;
+}
+.skill-fill-72::after {
+    --base-skill-length: 72%;
+}
+.skill-fill-71::after {
+    --base-skill-length: 71%;
 }
 .skill-fill-70::after {
     --base-skill-length: 70%;
@@ -207,17 +279,77 @@ body{
 .skill-fill-45::after {
     --base-skill-length: 45%;
 }
+.skill-fill-44::after {
+    --base-skill-length: 44%;
+}
+.skill-fill-43::after {
+    --base-skill-length: 43%;
+}
+.skill-fill-42::after {
+    --base-skill-length: 42%;
+}
+.skill-fill-41::after {
+    --base-skill-length: 41%;
+}
 .skill-fill-40::after {
     --base-skill-length: 40%;
+}
+.skill-fill-39::after {
+    --base-skill-length: 39%;
+}
+.skill-fill-38::after {
+    --base-skill-length: 38%;
+}
+.skill-fill-37::after {
+    --base-skill-length: 37%;
+}
+.skill-fill-36::after {
+    --base-skill-length: 36%;
 }
 .skill-fill-35::after {
     --base-skill-length: 35%;
 }
+.skill-fill-34::after {
+    --base-skill-length: 34%;
+}
+.skill-fill-33::after {
+    --base-skill-length: 33%;
+}
+.skill-fill-32::after {
+    --base-skill-length: 32%;
+}
+.skill-fill-31::after {
+    --base-skill-length: 31%;
+}
 .skill-fill-30::after {
     --base-skill-length: 30%;
 }
+.skill-fill-29::after {
+    --base-skill-length: 29%;
+}
+.skill-fill-28::after {
+    --base-skill-length: 28%;
+}
+.skill-fill-27::after {
+    --base-skill-length: 27%;
+}
+.skill-fill-26::after {
+    --base-skill-length: 26%;
+}
 .skill-fill-25::after {
     --base-skill-length: 25%;
+}
+.skill-fill-24::after {
+    --base-skill-length: 24%;
+}
+.skill-fill-23::after {
+    --base-skill-length: 23%;
+}
+.skill-fill-22::after {
+    --base-skill-length: 22%;
+}
+.skill-fill-21::after {
+    --base-skill-length: 21%;
 }
 .skill-fill-20::after {
     --base-skill-length: 20%;
@@ -225,8 +357,47 @@ body{
 .skill-fill-15::after {
     --base-skill-length: 15%;
 }
+.skill-fill-14::after {
+    --base-skill-length: 14%;
+}
+.skill-fill-13::after {
+    --base-skill-length: 13%;
+}
+.skill-fill-12::after {
+    --base-skill-length: 12%;
+}
+.skill-fill-11::after {
+    --base-skill-length: 11%;
+}
 .skill-fill-10::after {
     --base-skill-length: 10%;
+}
+.skill-fill-9::after {
+    --base-skill-length: 9%;
+}
+.skill-fill-8::after {
+    --base-skill-length: 8%;
+}
+.skill-fill-7::after {
+    --base-skill-length: 7%;
+}
+.skill-fill-6::after {
+    --base-skill-length: 6%;
+}
+.skill-fill-5::after {
+    --base-skill-length: 5%;
+}
+.skill-fill-4::after {
+    --base-skill-length: 4%;
+}
+.skill-fill-3::after {
+    --base-skill-length: 3%;
+}
+.skill-fill-2::after {
+    --base-skill-length: 2%;
+}
+.skill-fill-1::after {
+    --base-skill-length: 1%;
 }
 
 @keyframes skill_base_fill {
