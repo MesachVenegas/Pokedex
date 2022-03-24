@@ -64,19 +64,42 @@ const load_data = (data) => {
 // Stats base del pokemon
 const bar_fill = (data) => {
     let stats = data.stats;
-    console.log(stats)
+    console.log(stats);
     // Obtención de  los elementos para cambio de cantidad.
-    let hp = document.getElementById('hp-data')
-    let atk = document.getElementById('atk-data')
-    let df= document.getElementById('df-data')
-    let es_atk = document.getElementById('es_atk-data')
-    let es_df = document.getElementById('es_def-data')
-    let speed = document.getElementById('speed-data')
-    hp.textContent = stats[0].base_stat;
-    atk.textContent = stats[1].base_stat;
-    df.textContent = stats[2].base_stat;
-    es_atk.textContent = stats[3].base_stat;
-    es_df.textContent = stats[4].base_stat;
-    speed.textContent = stats[5].base_stat;
+    let hp = document.getElementById('hp-data');
+    let atk = document.getElementById('atk-data');
+    let def= document.getElementById('df-data');
+    let es_atk = document.getElementById('es_atk-data');
+    let es_def = document.getElementById('es_def-data');
+    let speed = document.getElementById('speed-data');
+    hp_value = stats[0].base_stat;
+    atk_value = stats[1].base_stat;
+    def_value = stats[2].base_stat;
+    es_atk_value = stats[3].base_stat;
+    es_def_value = stats[4].base_stat;
+    speed_value = stats[5].base_stat;
+    hp.textContent = hp_value;
+    atk.textContent = atk_value;
+    def.textContent = def_value;
+    es_atk.textContent = es_atk_value;
+    es_def.textContent = es_def_value;
+    speed.textContent = speed_value;
     // Obtención de barras de estadísticas para cambio de porcentaje.
+    let bar_hp = document.getElementById('bar_hp');
+    let bar_atk = document.getElementById('bar_atk');
+    let bar_def = document.getElementById('bar_def');
+    let bar_es_atk = document.getElementById('bar_es_atk');
+    let bar_es_def = document.getElementById('bar_es_def');
+    let bar_speed = document.getElementById('bar_speed');
+    bar_hp.classList.add(`skill-fill-${calcular_porcentaje(hp_value)}`)
+    bar_atk.classList.add(`skill-fill-${calcular_porcentaje(atk_value)}`)
+    bar_def.classList.add(`skill-fill-${calcular_porcentaje(def_value)}`)
+    bar_es_atk.classList.add(`skill-fill-${calcular_porcentaje(es_atk_value)}`)
+    bar_es_def.classList.add(`skill-fill-${calcular_porcentaje(es_def_value)}`)
+    bar_speed.classList.add(`skill-fill-${calcular_porcentaje(speed_value)}`)
+
+}
+const calcular_porcentaje = (valor) => {
+    let result =  Math.round(valor * 100 / 200)
+    return result
 }
