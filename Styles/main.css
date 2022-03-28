@@ -175,7 +175,7 @@ body{
 @media screen and (max-width:800px) {
     .skill{
         grid-column: 1/4;
-        grid-row: auto;
+        grid-row: 5/8;
     }
 
 }
