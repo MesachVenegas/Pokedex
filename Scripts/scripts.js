@@ -96,7 +96,7 @@ const bar_fill = (data) => {
         bar_hp.classList[1] = `skill-fill-${calcular_porcentaje(hp_value)}`;
     }
     else{
-        console.log(bar_hp.classList)
+        // console.log(bar_hp.classList)
         bar_hp.classList.add(`skill-fill-${calcular_porcentaje(hp_value)}`)
     }
     bar_atk.classList.add(`skill-fill-${calcular_porcentaje(atk_value)}`)

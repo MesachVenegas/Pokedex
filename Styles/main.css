@@ -156,6 +156,7 @@ body{
 }
 .base-skill,
 .base-skill::after{
+    grid-column: 2/4;
     position: relative;
     width: 250px;
     height: 8px;
@@ -170,6 +171,12 @@ body{
     background-color: var(--pokedex-bg);
     transition: .7s all;
     animation: skill_base_fill 7s ease-in-out forwards;
+}
+@media screen and (max-width:720px) {
+    .skill{
+        grid-column: 1/4;
+    }
+
 }
 .skill-fill-100::after {
     --base-skill-length: 100%;
@@ -264,17 +271,77 @@ body{
 .skill-fill-70::after {
     --base-skill-length: 70%;
 }
+.skill-fill-69::after {
+    --base-skill-length: 69%;
+}
+.skill-fill-68::after {
+    --base-skill-length: 68%;
+}
+.skill-fill-67::after {
+    --base-skill-length: 67%;
+}
+.skill-fill-66::after {
+    --base-skill-length: 66%;
+}
 .skill-fill-65::after {
     --base-skill-length: 65%;
+}
+.skill-fill-64::after {
+    --base-skill-length: 64%;
+}
+.skill-fill-63::after {
+    --base-skill-length: 63%;
+}
+.skill-fill-62::after {
+    --base-skill-length: 62%;
+}
+.skill-fill-61::after {
+    --base-skill-length: 61%;
 }
 .skill-fill-60::after {
     --base-skill-length: 60%;
 }
+.skill-fill-59::after {
+    --base-skill-length: 59%;
+}
+.skill-fill-58::after {
+    --base-skill-length: 58%;
+}
+.skill-fill-57::after {
+    --base-skill-length: 57%;
+}
+.skill-fill-56::after {
+    --base-skill-length: 56%;
+}
 .skill-fill-55::after {
     --base-skill-length: 55%;
 }
+.skill-fill-54::after {
+    --base-skill-length: 54%;
+}
+.skill-fill-53::after {
+    --base-skill-length: 53%;
+}
+.skill-fill-52::after {
+    --base-skill-length: 52%;
+}
+.skill-fill-51::after {
+    --base-skill-length: 51%;
+}
 .skill-fill-50::after {
     --base-skill-length: 50%;
+}
+.skill-fill-49::after {
+    --base-skill-length: 49%;
+}
+.skill-fill-48::after {
+    --base-skill-length: 48%;
+}
+.skill-fill-47::after {
+    --base-skill-length: 47%;
+}
+.skill-fill-46::after {
+    --base-skill-length: 46%;
 }
 .skill-fill-45::after {
     --base-skill-length: 45%;
