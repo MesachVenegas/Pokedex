@@ -172,9 +172,10 @@ body{
     transition: .7s all;
     animation: skill_base_fill 7s ease-in-out forwards;
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width:800px) {
     .skill{
         grid-column: 1/4;
+        grid-row: auto;
     }
 
 }
