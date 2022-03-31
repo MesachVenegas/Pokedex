@@ -85,6 +85,21 @@ const load_data = (data) => {
             case "ground":
                 icon_type.src = "./Img/Tipos/tierra.png";
                 break;
+            case "steel":
+                icon_type.src = "./Img/Tipos/acero.png";
+                break;
+            case "dark":
+                icon_type.src = "./Img/Tipos/oscuridad.png";
+                break;
+            case "normal":
+                icon_type.src = "./Img/Tipos/normal.png";
+                break;
+            case "dragon":
+                icon_type.src = "./Img/Tipos/dragon.png";
+                break;
+            case "flying":
+                icon_type.src = "./Img/Tipos/volador.png";
+                break;
             default:
                 icon_type.width = "30";
                 icon_type.width = "./Img/pokeball_type.png";
@@ -94,30 +109,45 @@ const load_data = (data) => {
             icon_type2.style = "visibility: visible"
             switch(tipos[1]){
                 case "fire":
-                    icon_type2.src = "./Img/Tipos/fuego.png";
-                    break;
-                case "water":
-                    icon_type2.src = "./Img/Tipos/agua.png";
-                    break;
-                case "poison":
-                    icon_type2.src = "./Img/Tipos/veneno.png";
-                    break;
-                case "grass":
-                    icon_type2.src = "./Img/Tipos/planta.png";
-                    break;
-                case "psychic":
-                    icon_type2.src = "./Img/Tipos/psiquico.png";
-                    break;
-                case "rock":
-                    icon_type2.src = "./Img/Tipos/roca.png";
-                    break;
-                case "ground":
-                    icon_type2.src = "./Img/Tipos/tierra.png";
-                    break;
-                default:
-                    icon_type2.width = "30";
-                    icon_type2.width = "./Img/pokeball_type.png";
-                    break;
+                icon_type2.src = "./Img/Tipos/fuego.png";
+                break;
+            case "water":
+                icon_type2.src = "./Img/Tipos/agua.png";
+                break;
+            case "poison":
+                icon_type2.src = "./Img/Tipos/veneno.png";
+                break;
+            case "grass":
+                icon_type2.src = "./Img/Tipos/planta.png";
+                break;
+            case "psychic":
+                icon_type2.src = "./Img/Tipos/psiquico.png";
+                break;
+            case "rock":
+                icon_type2.src = "./Img/Tipos/roca.png";
+                break;
+            case "ground":
+                icon_type2.src = "./Img/Tipos/tierra.png";
+                break;
+            case "steel":
+                icon_type2.src = "./Img/Tipos/acero.png";
+                break;
+            case "dark":
+                icon_type2.src = "./Img/Tipos/oscuridad.png";
+                break;
+            case "normal":
+                icon_type2.src = "./Img/Tipos/normal.png";
+                break;
+            case "dragon":
+                icon_type2.src = "./Img/Tipos/dragon.png";
+                break;
+            case "flying":
+                icon_type2.src = "./Img/Tipos/volador.png";
+                break;
+            default:
+                icon_type2.width = "30";
+                icon_type2.width = "./Img/pokeball_type.png";
+                break;
             }
         }
         else{
